@@ -2,6 +2,7 @@
 cpprestsdk/2.10.13@bincrafters/stable
 glog/0.4.0@bincrafters/stable
 opencv/3.4.3@conan/stable
+faiss/1.6.3@jdai/stable
 
 [options]
 *:shared=True

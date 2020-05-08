@@ -14,4 +14,4 @@ make -j 6
 
 echo ""
 echo "------> running"
-./ConanVCpkgDemo
+./vcpkg-vs-conan

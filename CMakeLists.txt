@@ -3,4 +3,11 @@ project(ConanVCpkgDemo)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ConanVCpkgDemo main.cpp)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
+link_libraries(
+        ${CONAN_LIBS}
+)
+
+add_executable(${PROJECT_NAME} main.cpp)

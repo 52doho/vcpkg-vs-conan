@@ -1,0 +1,18 @@
+[requires]
+cpprestsdk/2.10.13@bincrafters/stable
+glog/0.4.0@bincrafters/stable
+opencv/3.4.3@conan/stable
+
+[options]
+*:shared=True
+gflags:nothreads=False
+gflags:fPIC=True
+gflags:namespace=google
+
+[imports]
+#bin, *.dll -> ./src/bin
+#lib, *.dylib* -> ./src/bin
+#lib, *.so* -> ./src/bin
+
+[generators]
+cmake

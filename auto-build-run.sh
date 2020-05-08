@@ -8,4 +8,4 @@ make -j 6
 
 echo ""
 echo "------> build success and running:"
-./ConanVCpkgDemo
+./vcpkg-vs-conan

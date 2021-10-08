@@ -6,7 +6,7 @@
 | host packages | centralized | decentralized: Artifactory, Bintray, private
 | build system | [CMake, MSBuild](https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md) | any: CMake, MSBuild, Makefiles, Meson, etc
 | num. of library | ~1350 | ~560 [official unique libraries](https://github.com/conan-io/conan-center-index), 113,369 [Binary Packages Indexed](https://conan.io/center/) + github community
-| different versions of library support | [no](https://devblogs.microsoft.com/cppblog/vcpkg-using-multiple-enlistments/) | yes
+| different versions of library support | [yes](https://devblogs.microsoft.com/cppblog/take-control-of-your-vcpkg-dependencies-with-versioning-support/) using [version field in JSON manifest file](https://github.com/microsoft/vcpkg/blob/master/docs/users/manifests.md#version-fields) | yes
 | link type | static ([extra works is required to build shared library](https://github.com/microsoft/vcpkg/blob/master/docs/examples/overlay-triplets-linux-dynamic.md)) | [static, shared](https://docs.conan.io/en/latest/using_packages/conanfile_txt.html#options)
 | CMakeLists.txt | manually add include\ and link libraries | automatically
 | missing library | 1. [open a feature issue](https://github.com/microsoft/vcpkg/issues)<br/>2. [create package and pull request](https://github.com/microsoft/vcpkg/pulls) | 1. [open a feature issue](https://github.com/conan-io/conan/issues)<br/> 2. [create package](https://docs.conan.io/en/latest/creating_packages.html)
